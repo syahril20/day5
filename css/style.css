@@ -1,0 +1,441 @@
+/* MY DETAIL */
+.bodyDetail{
+    margin: 0 auto;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyDetail .head{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bodyDetail .contentDetail .items1{
+    width: 700px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.bodyDetail .contentDetail{
+    display: grid;
+    
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .items1 {
+    grid-column: 1;
+    grid-row: 1 ;
+  }
+  
+  .items2 {
+    grid-column: 2;
+    grid-row: 1 ;
+  }
+
+  .items2 .headerDuration{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  
+  .items2 .bodyDuration{
+      font-size: 20px;
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .items2 .bodyDuration label{
+        margin-top: 5px;
+        margin-left: 10px;
+        color: #6c6c6c;
+      }
+    
+      .items2 .durationLogo{
+      width: 40px;
+    }
+
+.headerTech{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+
+.techLogo{
+    width: 40px;
+  }
+
+  .items3 .bodyDuration{
+    font-size: 20px;
+    display: flex;
+  }
+
+  .items3 .bodyDuration.dot{
+    display: grid;
+    justify-content: start;
+    gap: 20px 1em;
+    grid-template-columns: auto auto;
+}
+
+  .items3 .bodyDuration label{
+      margin-top: 5px;
+      margin-left: 10px;
+      color: #6c6c6c;
+    }
+  
+  .items4 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    text-align: justify;
+  }
+
+  .items4 p{
+    font-size: 16px;
+  }
+
+/* MY PROJECT */
+.bodyP{
+    background-color: #d0d0d0;
+    margin: 0;
+    font-family: comic sans ms;
+}
+
+.formP {
+    font-size: 20px;
+    max-width: 30em;
+    margin: 3em auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.formP .text-input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: Comic Sans Ms;
+    font-size: 20px;
+    box-shadow: 0 10px 20px rgb(119, 119, 119);
+}
+
+.formP .field {
+    width: 100%;
+    margin: 0 0 1em 0;
+}
+.formP .field.half {
+    width: calc(50% - 5px);
+}
+
+.formP .submitProject{
+    float: right;
+}
+
+.cek{
+    display: grid;
+    justify-content: start;
+    gap: 1em 4em;
+    grid-template-columns: auto auto;
+}
+
+.submitProject{
+    font-family: Comic Sans Ms;
+    border-radius: 20px;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.inputBox{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgb(119, 119, 119);
+}
+
+.inputBox:checked {
+    background-color: gray;
+}
+
+.bodyProject{
+    background-color: rgb(238, 238, 238);
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.BP{
+    display: grid;
+    flex-direction: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+.BP2{
+    display: grid;
+    flex-direction: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+.BP .item{
+    background-color: #ffffff;
+    max-width:min-content;
+    margin: 1em 1em;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(119, 119, 119);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.BP .item .image{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.BP .item .header .nameProj{
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.BP .item .header .duration{
+    font-size: 12px;
+    color: #acacac;
+    
+}
+
+.BP .item .description{
+    font-size: 12px;
+    color: #000000;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.BP .item .itemContent{
+    padding: 15px 0;
+}
+
+.BP .item .logo{
+    width: 30px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.BP .item .contentButton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tombol{
+    text-align: center;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    width: calc(50% - 1px);
+    
+}
+/* MY PROJECT */
+  
+/* Contact ME */
+
+.form{
+    font-size: 20px;
+    max-width: 30em;
+    margin: 2em auto;
+}
+
+.input{
+    
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-family: Comic Sans Ms;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    box-shadow: 0 10px 20px rgb(119, 119, 119);
+}
+
+.submit{
+    font-family: Comic Sans Ms;
+    border-radius: 20px;
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buttonSubmit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Contact ME */
+
+/* Index */
+.body{
+    
+    padding: 25px 10%;
+}
+
+.bodyIndex{
+    background-color: #d0d0d0;
+    margin: 0;
+    font-family: comic sans ms;
+}
+
+.box{
+    justify-content: center;
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px black;
+}
+
+.content{
+    padding: 5% 10%; 
+    text-align: justify;
+    
+}
+
+.button{
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.button:hover{
+    background-color: rgb(49, 187, 229);
+}
+
+
+.item3{
+    display: flex;
+}
+
+.medsos{
+    width: 40px;
+    padding-right: 25px;
+}
+
+.item4{
+    margin: auto;
+    background-color: #C6FDFF;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgb(96, 96, 96);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+  }
+
+.downLogo{
+    width: 20px;
+    height: 20px;
+}
+
+.profile{
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.name{
+    text-align: center;
+    padding: 5px;
+}
+
+/* Index */
+
+/* Navbar */
+
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+    padding: 0 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav img {
+    margin-right: 50px;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-left ul li {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right a {
+    border-radius: 10px;
+    padding: 8px 20px; 
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+/* Navbar */
+ 

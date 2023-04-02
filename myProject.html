@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Project</title>
+    </head>
+    <link rel="stylesheet" href="./css/style.css">
+    <body class="bodyP" onload="test()"> 
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <img src="./assets/logo.png" alt="logo" >
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./myProject.html">My Project</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="./contactMe.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <center><h1>ADD MY PROJECT</h1></center>
+            <form class="formP field" onsubmit="getBlog(event)">
+                <div class='field'>
+                    <label>Project Name</label>
+                    <input type="text" class="text-input" id="title">
+                </div>
+                <div class='field half'>
+                    <label>Start Date</label>
+                    <input type="date" class="text-input " id="start">
+                </div>
+                <div class='field half'>
+                    <label>End Date</label>
+                    <input type="date" class="text-input" id="end">
+                </div>
+                <div class='field'>
+                    <label>Description</label> 
+                    <textarea name="description" id="description" cols="30" rows="5" class="text-input" style="resize:none;"></textarea>
+                </div>
+                <div class='field'>
+                    <label>Technologies</label>
+                </div>
+                <div class='field cek'>
+                    <div>
+                        <input type="checkbox" class="inputBox" id="nodeBox">
+                        <label for="nodeCheckbox">Node Js</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="inputBox" value="next" id="nextBox">
+                        <label for="nextCheckbox">Next Js</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="inputBox" value="react" id="reactBox">
+                        <label for="showImage">React Js</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="inputBox" value="typeScript" id="typeBox">
+                        <label for="typeScriptCheckbox">TypeScript</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Upload Image</label>
+                    <input type="file" class="text-input" id="img" required>
+                </div>
+                <div class="field">
+                    <button type="submit" class="submitProject" >submit</button>
+                </div>
+            </form>
+
+            <div class="bodyProject">
+                <center><h1>MY PROJECT</h1></center>
+                <div class="BP" id="content">
+                    
+                </div>
+            </div>
+    </body>
+    <script src="./js/scripts.js"></script>
+</html>
