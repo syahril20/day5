@@ -70,7 +70,6 @@ function getBlog(event){
     let react = document.getElementById("reactBox").checked
     let typescript = document.getElementById("typeBox").checked
     
-
     image = URL.createObjectURL(image[0]);
 
     if(title == "") {
@@ -79,11 +78,12 @@ function getBlog(event){
         return alert("Start Tidak Boleh Kosong")
     } else if(end == "") {
         return alert("End Tidak Boleh Kosong")
+    } else if(start > end) {
+        return alert("End Date Tidak Boleh Kurang dari Start Date")
     } else if(description == "") {
         return alert("description Tidak Boleh Kosong")
     }
     
-
     let blog = {
         title,
         start,
@@ -97,14 +97,10 @@ function getBlog(event){
         typescript,
     }
     
-
     blogs.push(blog)    
     console.log(blogs)
     renderBlog()
-    
 }
-
-
 
 function renderBlog() {
     document.getElementById("content").innerHTML = ``
@@ -132,25 +128,25 @@ function renderBlog() {
                 <a href="#" class="tombol">delete</a>
             </div>
         </div>`
-        
     }
 }
 
 function createDuration(start, end) {
     let distance = new Date(end) - new Date(start)
-    // validation
+    // Valid
     const dayDistance = Math.floor(distance / ( 24 * 60 * 60 * 1000 ))
     const monthDistance = Math.floor(distance /( 30 * 24 * 60 * 60 * 1000 ))
-
-    
+    const yearDistance = Math.floor(distance /( 12 * 30 * 24 * 60 * 60 * 1000 ))
 
     if( dayDistance > 0 && dayDistance <= 29 ){
         return `${dayDistance} Hari `
-    }else if (dayDistance == 30) {
-        return `${monthDistance} Bulan`
-    }else if(dayDistance >= 31 && monthDistance <= 12){ 
+    }else if(dayDistance >= 30 && monthDistance <= 12){ 
         return monthDistance + " Bulan"
-        }
+    }else if(monthDistance >= 12){ 
+        return yearDistance + " Tahun"
+    }else if(dayDistance >= 0 && dayDistance <= 24){ 
+        return "1 hari"
+    }
  }
 
 function getPosted(time){
